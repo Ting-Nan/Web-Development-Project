@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width:100%;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: aliceblue;;
+}
+
+.header img{
+    object-fit: cover;
+    height: 500px;
+}
+
+.upperbar{
+    background-color: rgb(0 0 0 / 63%);
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    margin: 0;
+}
+
+.logo{
+    flex-basis: 7%;
+    width: 150px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 0;
+    padding: 0;
+}
+
+.brandname{
+    flex-basis: 20%;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.navigationmenu{
+    flex-basis: 70%;
+}
+.navigationlist{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.navigationlist a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.navigationlist li{
+    text-align: right;
+}
+
+.searchfield{
+    flex-basis: 25%;
+    padding: 5px;
+    margin: 10px;
+    width: 250px;
+}
+
+.searchbutton{
+    flex-basis: 5%;
+    margin-top: 17px;
+}
+
+.middlebar{
+    display: flex;
+}
+
+.tagline{
+    flex-basis: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkgreen;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.homevideo{
+    flex-basis: 50%;
+    width: 150px;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.middle{
+    background-color: rgb(33 131 119 / 81%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    padding: 10px;
+    letter-spacing: 5px;
+}
+
+.regionlistcontainer{
+    background-color: rgb(22 75 85 / 41%);
+    margin-top: 1px;
+    padding: 30px;
+}
+
+.regionlist{
+    display: flex;
+    justify-content: space-around;
+}
+
+.regionlist img{
+    width: 120px;
+    margin: 10px auto;
+}
+
+.regionlist a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.regionlist li{
+    list-style-type: none;
+}
+
+.footerimage{
+    height: 350px;
+    object-fit: fill;
+}
+
+.subscription{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -550px;
+}
+
+.subscriptionfield{
+    flex-basis: 30%;
+    width: 200px;
+    margin-right: 10px;
+    margin-left: 150px;
+    border-radius: 2rem grey 1px;
+}
+
+.subscriptionbutton{
+    flex-basis: 20%;
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 2rem;
+}
+
+/*Region Pages*/
+
+.locationlist{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.locationlist img{
+    width: 250px;
+    margin: 10px auto;
+}
+
+.locationlist a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+
+.locationlist li{
+    list-style-type: none;
+    flex-basis: 20%;
+    padding: 10px;
+    margin: 15px;
+}
+
+/* Location Pages */
+
+.locationbody{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.locationnavigationmenu{
+    flex-basis: 15%;
+    background-color: #6db96ae6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.locationnavigationmenulist{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.locationnavigationmenulist a{
+    text-decoration: none;
+    color:green;
+}
+
+.locationnavigationmenulist li{
+    flex-basis: 15%;
+    background-color: beige;
+    border-radius: 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+}
+
+.locationnavigationmenulist li:hover{
+    background-color: aliceblue;
+}
+
+.locationheading{
+    flex-basis: 10%;
+}
+
+.locationarticle{
+    flex-basis: 70%;
+    display: flex;
+}
+
+.content{
+    flex-basis: 50%;
+}
+
+.content p{
+    text-align: justify;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.picturepallete{
+    flex-basis: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.item2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.item3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.item4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.item1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.item img{
+    object-fit: fill;
+    padding: 2px;
+}
+
+
+/*location score*/
+
+.locationMoreArticle{
+    padding: 50px;
+}
+
+.factor{
+    display: flex;
+    border: solid #8080801a 0.5px;
+    background-color: #8ab1cf26;
+    padding: 10px;
+}
+
+.factorname{
+    flex-basis: 20%;
+}
+
+.factorratebar{
+    flex-basis: 40%;
+    color: #000!important;
+    background-color: #c4c0c054!important;
+    margin: 50px;
+    border-radius: 2rem;
+    margin: 10px;
+}
+
+.factorrateprogress{
+    color: #fff!important;
+    padding: 5px;
+    border-radius: 2rem;
+    font-size: 12px;
+}
+
+/*Other detail pages*/
+
+.factordetail{
+    flex-basis: 40%;
+}
+
+
+
+
+
+

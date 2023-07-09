@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle; width: 300px; padding: 20px;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="upperbar">
+            <div class="logo"><img src="Media/HomePage/logo-removebg-preview.png" alt="logo image" style="width: 60px; margin-left: 10px; margin-right: 0; padding: 0;"></div>
+            <div class="brandname">Journey Jive</div>
+            <div class="navigationmenu">
+                <ul class="navigationlist">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </div>
+            <div class="searchfield"><input type="text" style="border-radius: 5rem grey 1px; height: 30px;"></div>
+            <div class="searchbutton"><input type="submit" style="height: 30px; width:100px; background-color: #781c1ca6;; border-radius: 5rem; border:0; color:white; font-weight: bold;"></div>
+        </div>
+        <h2 class="locationMoreHeading" style="padding: 10px; background-color: #00569675; margin-top: 70px;">10 Top-Rated Tourist Attractions in the World</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="Media/Gallery/Eiffel Tower, Paris.jpg" style="width:100%">
+              <div class="text" style="font-size: 18px; font-weight: bold;">Eiffel Tower, Paris</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="Media/Gallery/Statue of Liberty, New York City.jpg" style="width:100%">
+              <div class="text" style="font-size: 18px; font-weight: bold;">Statue of Liberty, New York City</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="Media/Gallery/The Colosseum, Rome.jpg" style="width:100%">
+              <div class="text" style="font-size: 18px; font-weight: bold;">The Colosseum, Rome</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 10</div>
+                <img src="Media/Gallery/Machu Picchu, Peru.jpg" style="width:100%">
+                <div class="text" style="font-size: 18px; font-weight: bold;">Machu Picchu, Peru</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 10</div>
+                <img src="Media/Gallery/The Acropolis, Athens.jpg" style="width:100%">
+                <div class="text" style="font-size: 18px; font-weight: bold; margin-bottom: 20px; text-shadow: #717171;">The Acropolis, Athens</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 10</div>
+                <img src="Media/Gallery/The Taj Mahal, India.jpg" style="width:100%">
+                <div class="text" style="font-size: 18px; font-weight: bold; margin-bottom: 20px; text-shadow: #717171;">The Taj Mahal, India</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 10</div>
+                <img src="Media/Gallery/Pyramids of Giza, Egypt.jpg" style="width:100%">
+                <div class="text" style="font-size: 18px; font-weight: bold; margin-bottom: 20px; text-shadow: #717171;">Pyramids of Giza, Egypt</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 10</div>
+                <img src="Media/Gallery/Great Wall of China.jpg" style="width:100%">
+                <div class="text" style="font-size: 18px; font-weight: bold; margin-bottom: 20px; text-shadow: #717171;">Great Wall of China</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">9 / 10</div>
+                <img src="Media/Gallery/Angkor Wat, Cambodia.jpg" style="width:100%">
+                <div class="text" style="font-size: 18px; font-weight: bold; margin-bottom: 20px; text-shadow: #717171;">Angkor Wat, Cambodia</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">10 / 10</div>
+                <img src="Media/Gallery/Petra, Jordan.jpg" style="width:100%">
+                <div class="text" style="font-size: 18px; font-weight: bold; margin-bottom: 20px; text-shadow: #717171;">Petra, Jordan</div>
+            </div>
+
+
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+              <span class="dot" onclick="currentSlide(6)"></span> 
+              <span class="dot" onclick="currentSlide(7)"></span> 
+              <span class="dot" onclick="currentSlide(8)"></span> 
+              <span class="dot" onclick="currentSlide(9)"></span> 
+              <span class="dot" onclick="currentSlide(10)"></span>  
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>            
+    </div>
+</body>
