@@ -10,6 +10,12 @@ body{
     background-color: aliceblue;;
 }
 
+.container{
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 .header img{
     object-fit: cover;
     height: 500px;
@@ -23,6 +29,7 @@ body{
     top: 5px;
     left: 0px;
     margin: 0;
+    height: 70px;
 }
 
 .logo{
@@ -32,6 +39,12 @@ body{
     margin-left: 10px;
     margin-right: 0;
     padding: 0;
+    white-space: nowrap;
+}
+
+.logo img{
+    height: 70px;
+    width: 70px;
 }
 
 .brandname{
@@ -78,6 +91,7 @@ body{
 .searchbutton{
     flex-basis: 5%;
     margin-top: 17px;
+    margin-right: 10px;
 }
 
 .middlebar{
@@ -100,6 +114,7 @@ body{
     width: 150px;
     margin: 10px;
     margin-left: 0;
+    object-fit: cover;
 }
 
 .middle{
@@ -136,6 +151,7 @@ body{
     text-align: center;
     color: white;
     letter-spacing: 5px;
+    white-space: nowrap;
 }
 
 .regionlist li{
@@ -143,15 +159,16 @@ body{
 }
 
 .footerimage{
-    height: 350px;
-    object-fit: fill;
+    height: 480px;
+    object-fit: cover;
+    object-position: left bottom;
 }
 
 .subscription{
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: -550px;
+    bottom: 250px;
 }
 
 .subscriptionfield{
