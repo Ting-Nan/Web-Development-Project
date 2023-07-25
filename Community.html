@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embrace the World - Community</title>
+    <link rel="icon" type="image/x-icon" href="Media/HomePage/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<style>
+.footerendline2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .footerendline2 a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #333; 
+    }
+
+    .footerendline2 img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+    
+    h2{
+        background-color: rgb(185, 183, 183);
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="header"><img src="Media/HomePage/Communityheader.jpg">
+            <img src="Media/HomePage/Communityheader2.jpg">
+            <img src="Media/HomePage/Communityheader3.jpeg">
+            <img src="Media/HomePage/Communityheader4.jpeg">
+            <img src="Media/HomePage/Communityheader5.jpeg">
+        </div>
+        <div class="upperbarHome">
+            <div class="logo"><img src="Media/HomePage/logo.png" alt="logo image"></div>
+            <div class="brandname">Embrace the World</div>
+            <div class="navigationmenu">
+                <ul class="navigationlist">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </div>
+            <!-- code need to be added -->
+            <div class="dropdown">Menu</div>
+            <div class="searchfield"><input type="text" style="border-radius: 5rem grey 1px; height: 30px;"></div>
+            <div class="searchbutton" onclick="search()"><input type="submit" value="Search" style="height: 30px; width:100px; background-color: #136912; border-radius: 5rem; border:0; color:white; font-weight: bold;"></div>
+        </div>
+
+        
+        <br/>
+        <!-- Community Section -->
+        <div class="community-section">
+            <h2> Welcome to our Community!</h2>
+            <br/>
+            <p>
+                Our community, "Embrace the World," is a place where people from all walks of life come together to share their experiences, ideas, and passions. It's a platform where you can connect with like-minded individuals who share similar interests and beliefs. Whether you are an avid traveler, an aspiring artist, a nature enthusiast, or someone seeking inspiration, our community is open to all.
+            <br/>
+            <br/>
+            </p>
+            <div class="community-benefits">
+                <h2> Joining our Community offers numerous benefits:</h2>
+                <br/>
+                <ul>
+                    <li>Connect and network with people who share your interests.</li>
+                    <li>Gain valuable insights and knowledge from others' experiences.</li>
+                    <li>Participate in engaging discussions and exchange ideas.</li>
+                    <li>Explore new opportunities for personal and professional growth.</li>
+                    <li>Discover inspiring stories and perspectives from diverse cultures and backgrounds.</li>
+                    <li>Access exclusive events, workshops, and resources.</li>
+                    <li>Become a part of a supportive and welcoming community.</li>
+                </ul>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+        <h2 ><div class="footerendline1">Follow us:</div></h2>
+                <div class="footerendline2">
+                    <a href="https://www.facebook.com/">
+                        <img src="Media/Icons/facebook.png" alt="facebook" >
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="Media/Icons/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://www.pinterest.ca/">
+                        <img src="Media/Icons/pinterest.png" alt="pinterest">
+                    </a>
+                    <a href="https://twitter.com/">
+                        <img src="Media/Icons/twitter.png" alt="twitter">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img src="Media/Icons/youtube.png" alt="youtube">
+                    </a>
+                </div>
+                <div class="footeredge">&copy; Copyright 2023 All rights reserved.</div>
+            </div>    
+</div>
+<script>
+    let headerIndex = 0;
+    carousel();
+
+    function carousel() {
+        const slides = document.querySelectorAll(".header img");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        headerIndex++;
+        if (headerIndex > slides.length) {
+            headerIndex = 1;
+        }
+        slides[headerIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000);
+    }
+</script>
+</body>
+</body>
+</html>
