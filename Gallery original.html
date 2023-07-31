@@ -140,14 +140,29 @@
       <div class="brandname">Embrace the World</div>
       <div class="navigationmenu">
         <ul class="navigationlist">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Gallery.html">Gallery</a></li>
-          <li><a href="Community.html">Community</a></li>
-          <li><a href="About.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Community.html">Community</a></li>
+            <li><a href="About.html">About</a></li>
         </ul>
-      </div>
-      <!-- code need to be added -->
-      <div class="dropdown">Menu</div>
+    
+        <div class="dropdown">
+            <button onclick="showMenu()" class="dropbtn">Menu</button>
+            <div id="maindropdown" class="dropdown-content">
+                <div>
+                    <div class="searchfieldMob"><input type="text" id="searchInput"
+                            style="border-radius: 5rem grey 1px; height: 30px;"></div>
+                    <div class="searchbuttonMob" onclick="search()"><input type="submit" value="Search"
+                            style="height: 30px; width:100px; background-color: #136912; border-radius: 5rem; border:0; color:white; font-weight: bold;">
+                    </div>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Community.html">Community</a>
+                <a href="About.html">About</a>
+            </div>
+        </div>
+    </div>
       <div class="searchfield" ><input type="text" id="searchInput" style="border-radius: 5rem grey 1px; height: 30px;"></div>
       <div class="searchbutton" onclick="search()"><input type="submit" value="Search" style="height: 30px; width:100px; background-color: #136912; border-radius: 5rem; border:0; color:white; font-weight: bold;"></div>
       

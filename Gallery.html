@@ -18,33 +18,48 @@
       <div class="brandname">Embrace the World</div>
       <div class="navigationmenu">
         <ul class="navigationlist">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Gallery.html">Gallery</a></li>
-          <li><a href="Community.html">Community</a></li>
-          <li><a href="About.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Community.html">Community</a></li>
+            <li><a href="About.html">About</a></li>
         </ul>
-      </div>
-      <!-- code need to be added -->
-      <div class="dropdown">Menu</div>
+    
+        <div class="dropdown">
+            <button onclick="showMenu()" class="dropbtn">Menu</button>
+            <div id="maindropdown" class="dropdown-content">
+                <div>
+                    <div class="searchfieldMob"><input type="text" id="searchInput"
+                            style="border-radius: 5rem grey 1px; height: 30px;"></div>
+                    <div class="searchbuttonMob" onclick="search()"><input type="submit" value="Search"
+                            style="height: 30px; width:100px; background-color: #136912; border-radius: 5rem; border:0; color:white; font-weight: bold;">
+                    </div>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Community.html">Community</a>
+                <a href="About.html">About</a>
+            </div>
+        </div>
+    </div>
       <div class="searchfield" ><input type="text" id="searchInput" style="border-radius: 5rem grey 1px; height: 30px;"></div>
       <div class="searchbutton" onclick="search()"><input type="submit" value="Search" style="height: 30px; width:100px; background-color: #136912; border-radius: 5rem; border:0; color:white; font-weight: bold;"></div>
     </div>
     <h2 class="pageHeading">10 Top-Rated Tourist Attractions in the World</h2>
-    <div class="slideshow-container">
+    <div class="slideshow-container" style="z-index: -1;">
       <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
+        <div class="numbertext">1 / 10</div>
         <img src="Media/Gallery/Eiffel Tower, Paris.jpg" style="width:100%">
         <div class="text" style="font-size: 18px; font-weight: bold;">Eiffel Tower, Paris</div>
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
+        <div class="numbertext">2 / 10</div>
         <img src="Media/Gallery/Statue of Liberty, New York City.jpg" style="width:100%">
         <div class="text" style="font-size: 18px; font-weight: bold;">Statue of Liberty, New York City</div>
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
+        <div class="numbertext">3 / 10</div>
         <img src="Media/Gallery/The Colosseum, Rome.jpg" style="width:100%">
         <div class="text" style="font-size: 18px; font-weight: bold;">The Colosseum, Rome</div>
       </div>

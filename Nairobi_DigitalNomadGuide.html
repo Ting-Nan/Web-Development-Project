@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script>
 </head>
 
 <body>
@@ -23,9 +24,24 @@
                     <li><a href="Community.html">Community</a></li>
                     <li><a href="About.html">About</a></li>
                 </ul>
+            
+                <div class="dropdown">
+                    <button onclick="showMenu()" class="dropbtn">Menu</button>
+                    <div id="maindropdown" class="dropdown-content">
+                        <div>
+                            <div class="searchfieldMob"><input type="text" id="searchInput"
+                                    style="border-radius: 5rem grey 1px; height: 30px;"></div>
+                            <div class="searchbuttonMob" onclick="search()"><input type="submit" value="Search"
+                                    style="height: 30px; width:100px; background-color: #136912; border-radius: 5rem; border:0; color:white; font-weight: bold;">
+                            </div>
+                        </div>
+                        <a href="index.html">Home</a>
+                        <a href="Gallery.html">Gallery</a>
+                        <a href="Community.html">Community</a>
+                        <a href="About.html">About</a>
+                    </div>
+                </div>
             </div>
-            <!-- code need to be added -->
-            <div class="dropdown">Menu</div>
             <div class="searchfield" ><input type="text" id="searchInput" style="border-radius: 5rem grey 1px; height: 30px;"></div>
             <div class="searchbutton" onclick="search()"><input type="submit" value="Search" style="height: 30px; width:100px; background-color: #136912; border-radius: 5rem; border:0; color:white; font-weight: bold;"></div>
         </div>
@@ -39,7 +55,17 @@
                     <li><a href="Nairobi_ProsCons.html">Pros and Cons</a></li>
                     <li><a href="Nairobi_Map.html">Map</a></li>
                 </ul>
-                <div class="subdropdown">Menu</div>
+                <div class="subdropdown">
+                    <button onclick="showSubMenu()" class="dropbtn" style="background-color: #9ce09b;; width: auto; padding: 5px 20px 5px 20px;">Location Details</button>
+                    <div id="subdropdown" class="dropdown-content">
+                        <a href="Nairobi, Kenya.html">Nairobi, Kenya</a>
+                        <a href="Nairobi_Scores.html">- Scores</a>
+                        <a href="Nairobi_DigitalNomadGuide.html">- Digital Nomad Guide</a>
+                        <a href="Nairobi_CostOfLiving.html">- Cost of Living</a>
+                        <a href="Nairobi_ProsCons.html">- Pros & Cons</a>
+                        <a href="Nairobi_Map.html">- Map</a>
+                    </div>
+                </div>
             </div>
             <h2 class="pageHeading">Nairobi, Kenya - Digital Nomad Guide</h2>
             <div class="locationMoreArticle">
